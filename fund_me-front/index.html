@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fund Me App</title>
+  <style>
+    body {
+      background-color: rgba(19, 7, 7, 0.952);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="number"],
+    input[type="string"] {
+      padding: 5px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      width: 200px;
+    }
+
+    #connectButton {
+      background-color: #555;
+    }
+
+    #balanceButton {
+      background-color: #888;
+    }
+
+    #withdrawButton {
+      background-color: #777;
+    }
+
+    #fundButton,
+    #fundButtonPurpose,
+    #ValueAmount,
+    #foundersNumbers,
+    #foundersRank,
+    #EmergencyFund,
+    #EmergencyFundStatus,
+    #EmergencyFunding,
+    #Fundingdata {
+      background-color: #999;
+    }
+    .line-break {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <button id="connectButton">Connect</button>
+  <button id="balanceButton">Get Balance</button>
+  <button id="withdrawButton">Withdraw</button>
+  <label for="ethamountlabel">ETH Amount</label>
+  <input id="ethAmount" placeholder="0.1" type="number" />
+  <input id="additionalValue" placeholder="Others" type="string" />
+  <button type="button" id="fundButton">Fund</button>
+  <button type="button" id="fundButtonPurpose">Purposed Fund</button>
+  <button id="EmergencyFunding">Emergency Support</button>
+  <br class="line-break" />
+  <input id="Address" placeholder="Address" type="string" />
+  <button id="ValueAmount">Amount Helped</button>
+  <button id="foundersNumbers">Count Founders</button>
+  <button id="foundersRank">Ranking</button>
+  <br class="line-break" />
+  <input id="goal" placeholder="Reason" type="string" />
+  <input id="money" placeholder="ETH" type="number" />
+  <button id="EmergencyFund">Start Emergency</button>
+  <br class="line-break" />
+  <button id="EmergencyFundStatus">Status Emergency</button>
+  <button id="Fundingdata">Funding Details</button>
+</body>
+<script src="./index.js" type="module"></script>
+</html>

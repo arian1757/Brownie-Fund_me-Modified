@@ -1,0 +1,26 @@
+compiler:
+  solc:
+    version: 0.8.8
+    optimizer:
+      enabled: true
+      runs: 200
+    remappings:
+      - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.2.0'
+dotenv : .env
+
+wallets :
+  from_key : ${Private_key}
+
+
+
+
+networks:
+  default: development
+  sepolia:
+    host: localhost
+    port: 8545
+    network_name: Sepolia
+    gas_price: auto
+pytest:
+  coverage: true
+  

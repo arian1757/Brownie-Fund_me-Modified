@@ -2,6 +2,9 @@
 
 The Fund Me smart contract is a modified version of the original contract with additional features to enhance the functionality and user experience.
 
+** Event**
+1. **Thanks**: To say thank you to supporters after receiving the fund.
+
 **Features**
 
 1. **Supporter Reason**: Supporters can now choose the reason for their donation to the contract owner. They have the option to specify reasons such as education or podcasts. However, supporters can also donate without declaring a specific reason.

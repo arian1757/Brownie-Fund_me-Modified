@@ -222,6 +222,7 @@ error InsufficientSupport(string available, string need);
         if (budget >= emergencyFunds.apex) {
             emergencyFunds.amount = 0;
             (bool success, ) = i_owner.call{value: budget}("");
+            require(success);
         }
 
     }
